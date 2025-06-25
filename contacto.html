@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" /> <!--Google Fonts-->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-papbK6Qe6qOK0PE7mQYtG9q5vUuQ9+15SXqRHLh7p5ri14S2jKv+L0dfFy0YXUKOSh5BL3dFTkLp4zUMURRj2w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="layout">
+    
+    <div class="sidebar"> <!--Barra lateral-->
+      <h1 class="logo">Mi Portafolio</h1>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="portafolio.html" class="nav-link">Portafolio</a></li>
+        <li><a href="habilidades.html" class="nav-link">Habilidades</a></li>
+        <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+      </ul>
+    </div>
+
+    
+    <main>
+      <section class="contact-section">
+        <h2>Contáctame</h2>
+        <div class="contact-wrapper">
+          <!--Formulario-->
+          <form class="contact-form" action="#" method="POST" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre"/>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email"/>
+            </div>
+            <div class="form-group full-width">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Enviar</button>
+          </form>
+
+          <!--Redes sociales-->
+          <aside class="social-sidebar" aria-label="Redes sociales y contacto"> <!-- Barra lateral de redes sociales -->
+            <h3>Redes Sociales</h3>
+            <ul class="social-list">
+              <li>
+                <a href="https://www.instagram.com/mpaula04_/" class="social-link instagram" target="_blank" rel="noopener">
+                  <i class="fab fa-instagram"></i> Instagram
+                </a>
+              </li>
+                <li>
+                <a href="https://www.facebook.com/" class="social-link facebook" target="_blank" rel="noopener">
+                  <i class="fab fa-facebook"></i> Facebook
+                </a>
+              </li>
+
+              <li>
+                <a href="https://github.com/dashboard" class="social-link whatsapp" target="_blank" rel="noopener">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </li>
+              
+              <li>
+                <h3>Email</h3>
+                <p>mariapaulaobandosolis@gmail.com</p>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
